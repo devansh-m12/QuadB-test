@@ -12,7 +12,7 @@ class Profile {
 
         for (const item of entries) {
             await Display.create({
-                name: item.symbol,
+                name: item.name,
                 last: item.last,
                 buy: item.buy,
                 sell: item.sell,
