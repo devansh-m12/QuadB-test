@@ -1,6 +1,6 @@
 async function fetchTickerData() {
     try {
-        const response = await fetch('http://localhost:8000/api/v1/profile/all');
+        const response = await fetch('https://backend-quadb.onrender.com/api/v1/profile/all');
         const data = await response.json();
         const fetchData = data.data;
         const tickerDataElement = document.getElementById('tickerData');
@@ -26,7 +26,7 @@ async function fetchTickerData() {
 
 async function updateTickerData() {
     try {
-        const response = await fetch('http://localhost:8000/api/v1/profile/fetch');
+        const response = await fetch('https://backend-quadb.onrender.com/api/v1/profile/fetch');
         fetchTickerData();
     } catch (error) {
         console.error('Error fetching ticker data:', error);
