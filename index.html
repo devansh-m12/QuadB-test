@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Top 10 Ticker Data</title>
+</head>
+<body>
+  <h1>Top 10 Ticker Data</h1>
+  <div class="buttonCls">
+    <button onclick="fetchTickerData()">Fetch Data</button> 
+    <button onclick="updateTickerData()">Update Data</button>
+  </div>
+    <div class="ticker-item">
+            <div class="itemDev"><strong>Name</strong></div>
+            <div class="itemDev"><strong>Last</strong></div>
+            <div class="itemDev"><strong>Buy</strong> </div>
+            <div class="itemDev"><strong>Sell</strong> </div>
+            <div class="itemDev"><strong>Volume</strong> </div>
+            <div class="itemDev"><strong>Base Unit</strong> </div>
+    </div>
+  <div id="tickerData" class="tickerData"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
